@@ -58,6 +58,12 @@ class MemberAttendanceRepository():
         self.sess:Session = sess
     
     def join_member_attendence(self):
-        return
+        return self.sess.query(Profile_Members,Attendance_Member).join(Attendance_Member).all()
+    
+    def outer_join_member(self):
+        return self.sess.query(Profile_Members,Attendance_Member).outerjoin(Attendance_Member).all()
+    
+
+
 
 
