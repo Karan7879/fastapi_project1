@@ -12,7 +12,7 @@ import json
 app = FastAPI()
 
 # MongoDB connection URL
-MONGODB_URL = "mongodb+srv://karan:8SZgZEkZt4vwQu7Q@cluster0.jwi0z9m.mongodb.net/?retryWrites=true&w=majority"
+MONGODB_URL = "mongodb+srv://<>:<>@cluster0.jwi0z9m.mongodb.net/?retryWrites=true&w=majority"
 
 # MongoDB database name
 DATABASE_NAME = "crud_example"
